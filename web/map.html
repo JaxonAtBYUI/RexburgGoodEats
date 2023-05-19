@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1f779efbbd3359e6f7c28e55dbdf6f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c1f779efbbd3359e6f7c28e55dbdf6f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c1f779efbbd3359e6f7c28e55dbdf6f6 = L.map(
+                "map_c1f779efbbd3359e6f7c28e55dbdf6f6",
+                {
+                    center: [43.826963085, -111.7926719],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_498ef541b45833721679b8999d7a37fc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+            var marker_27821142741b617b01e159806a2383e7 = L.marker(
+                [43.80148283, -111.8098587],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_91ab7b4b549aab51fbf834d9533317d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e1b096450499644c5f126466cc5f8c9 = $(`<div id="html_0e1b096450499644c5f126466cc5f8c9" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Fresco Kitchen and Grill<br><strong>Address:</strong> 1181 S Yellowstone Hwy, Rexburg, ID 83440<br><strong>Category:</strong> Italian</div>`)[0];
+                popup_91ab7b4b549aab51fbf834d9533317d6.setContent(html_0e1b096450499644c5f126466cc5f8c9);
+            
+        
+
+        marker_27821142741b617b01e159806a2383e7.bindPopup(popup_91ab7b4b549aab51fbf834d9533317d6)
+        ;
+
+        
+    
+    
+            var marker_b5f5c32c752ac0d7a2c8b89f1af716dc = L.marker(
+                [43.81315149, -111.8042367],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_6ecd22577b3dcf280233b3da411f9aba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5491f793ca89aa486bb4f1b07f010c96 = $(`<div id="html_5491f793ca89aa486bb4f1b07f010c96" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> G's Dairy Delights<br><strong>Address:</strong> 600 Handcart Ln, Rexburg, ID 83440<br><strong>Category:</strong> Desserts</div>`)[0];
+                popup_6ecd22577b3dcf280233b3da411f9aba.setContent(html_5491f793ca89aa486bb4f1b07f010c96);
+            
+        
+
+        marker_b5f5c32c752ac0d7a2c8b89f1af716dc.bindPopup(popup_6ecd22577b3dcf280233b3da411f9aba)
+        ;
+
+        
+    
+    
+            var marker_a0eb166ffc4be160d28ad9b3e92af9e5 = L.marker(
+                [43.82512683, -111.7885005],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_268e2b6621934df90ba419d354da77af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_789f547199bfd243df957b5f0c804b84 = $(`<div id="html_789f547199bfd243df957b5f0c804b84" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Red Rabbit Grill<br><strong>Address:</strong> 155 W Main St #8, Rexburg, ID 83440<br><strong>Category:</strong> Diner</div>`)[0];
+                popup_268e2b6621934df90ba419d354da77af.setContent(html_789f547199bfd243df957b5f0c804b84);
+            
+        
+
+        marker_a0eb166ffc4be160d28ad9b3e92af9e5.bindPopup(popup_268e2b6621934df90ba419d354da77af)
+        ;
+
+        
+    
+    
+            var marker_1458c548e0a7aeb9c2555e1f5f4e75db = L.marker(
+                [43.82664595, -111.7915933],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_aee64a76dd58d0c142d169ade6567c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63eed2d0f53710ce3f35730e31478f68 = $(`<div id="html_63eed2d0f53710ce3f35730e31478f68" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Kindgom of Pho<br><strong>Address:</strong> 250 W Main St, Rexburg, ID 83440<br><strong>Category:</strong> Vietnamese</div>`)[0];
+                popup_aee64a76dd58d0c142d169ade6567c14.setContent(html_63eed2d0f53710ce3f35730e31478f68);
+            
+        
+
+        marker_1458c548e0a7aeb9c2555e1f5f4e75db.bindPopup(popup_aee64a76dd58d0c142d169ade6567c14)
+        ;
+
+        
+    
+    
+            var marker_b244e647b1196e86b39d40c8d1244db7 = L.marker(
+                [43.82341624, -111.7892528],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_d791b92659c3b3107556bb505308546b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d76c57a65961a7c50370b76386470033 = $(`<div id="html_d76c57a65961a7c50370b76386470033" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Kainoa'a Hawaiian<br><strong>Address:</strong> 115 S 2nd St W, Rexburg, ID 83440<br><strong>Category:</strong> Hawaiian</div>`)[0];
+                popup_d791b92659c3b3107556bb505308546b.setContent(html_d76c57a65961a7c50370b76386470033);
+            
+        
+
+        marker_b244e647b1196e86b39d40c8d1244db7.bindPopup(popup_d791b92659c3b3107556bb505308546b)
+        ;
+
+        
+    
+    
+            var marker_4a70a689fc329f67028f5a5d51023cae = L.marker(
+                [43.81802336, -111.7927954],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_e190584a14422d4bf4e9d4e1ebbd2d9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6767a3d7a38fb6c7af9039ee35c1bf7 = $(`<div id="html_d6767a3d7a38fb6c7af9039ee35c1bf7" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Taqueria El Mulito<br><strong>Address:</strong> 312 W 4th S, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_e190584a14422d4bf4e9d4e1ebbd2d9d.setContent(html_d6767a3d7a38fb6c7af9039ee35c1bf7);
+            
+        
+
+        marker_4a70a689fc329f67028f5a5d51023cae.bindPopup(popup_e190584a14422d4bf4e9d4e1ebbd2d9d)
+        ;
+
+        
+    
+    
+            var marker_9f02de4baca98d064f55df69f3e131b9 = L.marker(
+                [43.81799579, -111.7928],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_ff7029965a504b5bbf10ca7c2cb67f09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dc6a994be70aef4bd3253d07ef9f263 = $(`<div id="html_6dc6a994be70aef4bd3253d07ef9f263" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Taqueria El Rancho<br><strong>Address:</strong> 312 W 4th S, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_ff7029965a504b5bbf10ca7c2cb67f09.setContent(html_6dc6a994be70aef4bd3253d07ef9f263);
+            
+        
+
+        marker_9f02de4baca98d064f55df69f3e131b9.bindPopup(popup_ff7029965a504b5bbf10ca7c2cb67f09)
+        ;
+
+        
+    
+    
+            var marker_b687a614d55ea32feca792cc027d5211 = L.marker(
+                [43.81823678, -111.7888069],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_f20bf2e2bfb20dd33a9adb21912fd01e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2234ea804d1a64416a81a1e099ef850 = $(`<div id="html_f2234ea804d1a64416a81a1e099ef850" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Da Pineapple Grill<br><strong>Address:</strong> 383 S 2nd St W, Rexburg, ID 83440<br><strong>Category:</strong> Hawaiian</div>`)[0];
+                popup_f20bf2e2bfb20dd33a9adb21912fd01e.setContent(html_f2234ea804d1a64416a81a1e099ef850);
+            
+        
+
+        marker_b687a614d55ea32feca792cc027d5211.bindPopup(popup_f20bf2e2bfb20dd33a9adb21912fd01e)
+        ;
+
+        
+    
+    
+            var marker_1113ff46e88c29dd5a1cf8261aa321d0 = L.marker(
+                [43.82063902, -111.7898308],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_9963b374edc61f994651fee5f3dc71c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20c80c61c210650864a541ea4df8a108 = $(`<div id="html_20c80c61c210650864a541ea4df8a108" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Kebab Hut<br><strong>Address:</strong> 248 S 2nd St W, Rexburg, ID 83440<br><strong>Category:</strong> Fusion</div>`)[0];
+                popup_9963b374edc61f994651fee5f3dc71c3.setContent(html_20c80c61c210650864a541ea4df8a108);
+            
+        
+
+        marker_1113ff46e88c29dd5a1cf8261aa321d0.bindPopup(popup_9963b374edc61f994651fee5f3dc71c3)
+        ;
+
+        
+    
+    
+            var marker_4acf0bb053c0bd314f709d4e6248c6fd = L.marker(
+                [43.82168995, -111.7893077],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_89291eb0b7f2e5811f503064296bee5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e75dad2993c69d60d6b99aba61989ee = $(`<div id="html_6e75dad2993c69d60d6b99aba61989ee" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Righteous Slice<br><strong>Address:</strong> 175 W. 200 S#100, Rexburg, ID 83440<br><strong>Category:</strong> Pizza</div>`)[0];
+                popup_89291eb0b7f2e5811f503064296bee5f.setContent(html_6e75dad2993c69d60d6b99aba61989ee);
+            
+        
+
+        marker_4acf0bb053c0bd314f709d4e6248c6fd.bindPopup(popup_89291eb0b7f2e5811f503064296bee5f)
+        ;
+
+        
+    
+    
+            var marker_0247c2070204eb762a6304ae8eb34541 = L.marker(
+                [43.82637363, -111.7883414],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_2da68f96b1d49bd7adacb85f49d92aa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b098435aeedd69eaa2bd095064cb0cb7 = $(`<div id="html_b098435aeedd69eaa2bd095064cb0cb7" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Jb's Restraunt<br><strong>Address:</strong> 150 W Main St, Rexburg, ID 83440<br><strong>Category:</strong> Diner</div>`)[0];
+                popup_2da68f96b1d49bd7adacb85f49d92aa9.setContent(html_b098435aeedd69eaa2bd095064cb0cb7);
+            
+        
+
+        marker_0247c2070204eb762a6304ae8eb34541.bindPopup(popup_2da68f96b1d49bd7adacb85f49d92aa9)
+        ;
+
+        
+    
+    
+            var marker_f4942a6f6921831933693497000cb362 = L.marker(
+                [43.82435002, -111.7842476],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_c9452b5744b64772fdb5843412f53d29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1872756407e7c84bd0de9961bb2e00a = $(`<div id="html_c1872756407e7c84bd0de9961bb2e00a" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> K-Lani's<br><strong>Address:</strong> 12 W 1st S, Rexburg, ID 83440<br><strong>Category:</strong> Desserts</div>`)[0];
+                popup_c9452b5744b64772fdb5843412f53d29.setContent(html_c1872756407e7c84bd0de9961bb2e00a);
+            
+        
+
+        marker_f4942a6f6921831933693497000cb362.bindPopup(popup_c9452b5744b64772fdb5843412f53d29)
+        ;
+
+        
+    
+    
+            var marker_309d08210a7d195385c562ba6c640fcd = L.marker(
+                [43.82467333, -111.7813811],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_f6a548cefa7172e9a15100ebd4b2279e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41c4822ed3f3336f7eb23ae5ed00ec2c = $(`<div id="html_41c4822ed3f3336f7eb23ae5ed00ec2c" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Millhollow Restaurant<br><strong>Address:</strong> 48 S 1st E, Rexburg, ID 83440<br><strong>Category:</strong> Sandwiches</div>`)[0];
+                popup_f6a548cefa7172e9a15100ebd4b2279e.setContent(html_41c4822ed3f3336f7eb23ae5ed00ec2c);
+            
+        
+
+        marker_309d08210a7d195385c562ba6c640fcd.bindPopup(popup_f6a548cefa7172e9a15100ebd4b2279e)
+        ;
+
+        
+    
+    
+            var marker_8b641e2ccda610fa386806e244d47f40 = L.marker(
+                [43.8251897, -111.7825594],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_2a16c457f12d1bf212647ebeee15e9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ea6f93bcbe0245fd56fa8170b33da4e = $(`<div id="html_1ea6f93bcbe0245fd56fa8170b33da4e" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> The Pit Barbecue & Catering<br><strong>Address:</strong> 32 College Ave, Rexburg, ID 83440<br><strong>Category:</strong> Barbeque</div>`)[0];
+                popup_2a16c457f12d1bf212647ebeee15e9d3.setContent(html_1ea6f93bcbe0245fd56fa8170b33da4e);
+            
+        
+
+        marker_8b641e2ccda610fa386806e244d47f40.bindPopup(popup_2a16c457f12d1bf212647ebeee15e9d3)
+        ;
+
+        
+    
+    
+            var marker_8d9297c0d19075677c7a35b0edfee399 = L.marker(
+                [43.82588251, -111.7833804],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_d5091875381304552aa9c1843dd0a520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6718b6c4d79d030e5de0488ad55c47f = $(`<div id="html_f6718b6c4d79d030e5de0488ad55c47f" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Original Thai<br><strong>Address:</strong> 10 E Main St, Rexburg, ID 83440<br><strong>Category:</strong> Thai</div>`)[0];
+                popup_d5091875381304552aa9c1843dd0a520.setContent(html_f6718b6c4d79d030e5de0488ad55c47f);
+            
+        
+
+        marker_8d9297c0d19075677c7a35b0edfee399.bindPopup(popup_d5091875381304552aa9c1843dd0a520)
+        ;
+
+        
+    
+    
+            var marker_1e441e1db60ab759dba0e21f37093145 = L.marker(
+                [43.82588145, -111.7846962],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_af858f97495a6a726880b45f829bd395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_683986cf8b5aa71cd5b65d3c0953b791 = $(`<div id="html_683986cf8b5aa71cd5b65d3c0953b791" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Guerrero's Mexican Food<br><strong>Address:</strong> 27 W Main St, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_af858f97495a6a726880b45f829bd395.setContent(html_683986cf8b5aa71cd5b65d3c0953b791);
+            
+        
+
+        marker_1e441e1db60ab759dba0e21f37093145.bindPopup(popup_af858f97495a6a726880b45f829bd395)
+        ;
+
+        
+    
+    
+            var marker_5e4396c0f3405632d0a6e6fbf38dcc5c = L.marker(
+                [43.83000938, -111.7774147],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_dec3d1a55e2af888ca7e332e98627585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfe5f037838934f835503adf3549b0fe = $(`<div id="html_cfe5f037838934f835503adf3549b0fe" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Boba Luv<br><strong>Address:</strong> 220 E 2nd N Ste 4, Rexburg, ID 83440<br><strong>Category:</strong> Beverage</div>`)[0];
+                popup_dec3d1a55e2af888ca7e332e98627585.setContent(html_cfe5f037838934f835503adf3549b0fe);
+            
+        
+
+        marker_5e4396c0f3405632d0a6e6fbf38dcc5c.bindPopup(popup_dec3d1a55e2af888ca7e332e98627585)
+        ;
+
+        
+    
+    
+            var marker_2f643b384627aad6da5318799552c917 = L.marker(
+                [43.83162307, -111.7787177],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_81b8753040b055bdb61ea281ba5ade5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5371348ee035e58812c37630957f920f = $(`<div id="html_5371348ee035e58812c37630957f920f" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> June's Place<br><strong>Address:</strong> 259 N 2nd E St ste b, Rexburg, ID 83440<br><strong>Category:</strong> Coffee</div>`)[0];
+                popup_81b8753040b055bdb61ea281ba5ade5f.setContent(html_5371348ee035e58812c37630957f920f);
+            
+        
+
+        marker_2f643b384627aad6da5318799552c917.bindPopup(popup_81b8753040b055bdb61ea281ba5ade5f)
+        ;
+
+        
+    
+    
+            var marker_4941085219bdaed4809b4534b22e6076 = L.marker(
+                [43.83201619, -111.7786934],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_f37226273398140a406cccc47d18f1be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da85641871c72d116955e8171d777fef = $(`<div id="html_da85641871c72d116955e8171d777fef" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Tony's Tacos Al Pastor<br><strong>Address:</strong> 279 N 2nd E, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_f37226273398140a406cccc47d18f1be.setContent(html_da85641871c72d116955e8171d777fef);
+            
+        
+
+        marker_4941085219bdaed4809b4534b22e6076.bindPopup(popup_f37226273398140a406cccc47d18f1be)
+        ;
+
+        
+    
+    
+            var marker_752a6e569ecd18e7b280c396c21a2e18 = L.marker(
+                [43.83342961, -111.7771094],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_28cac26d87cbfde3cbc400d57b5b86d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71d40c7213e4ce97c23f8e2fea10a556 = $(`<div id="html_71d40c7213e4ce97c23f8e2fea10a556" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Tacos Tepito<br><strong>Address:</strong> 348 N 2nd E, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_28cac26d87cbfde3cbc400d57b5b86d4.setContent(html_71d40c7213e4ce97c23f8e2fea10a556);
+            
+        
+
+        marker_752a6e569ecd18e7b280c396c21a2e18.bindPopup(popup_28cac26d87cbfde3cbc400d57b5b86d4)
+        ;
+
+        
+    
+    
+            var marker_2f9da4fe15db522d7051f57a5f1c835b = L.marker(
+                [43.83635766, -111.7787914],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_c7f6e2a2c36fe5dc7e74960fd167d703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4836b28a34e51935d81d8393ffceabea = $(`<div id="html_4836b28a34e51935d81d8393ffceabea" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> The Hickory<br><strong>Address:</strong> 485 N 2nd E, Rexburg, ID 83440<br><strong>Category:</strong> Barbeque</div>`)[0];
+                popup_c7f6e2a2c36fe5dc7e74960fd167d703.setContent(html_4836b28a34e51935d81d8393ffceabea);
+            
+        
+
+        marker_2f9da4fe15db522d7051f57a5f1c835b.bindPopup(popup_c7f6e2a2c36fe5dc7e74960fd167d703)
+        ;
+
+        
+    
+    
+            var marker_8e06dcb9632f1e6771a9591d569f3e3e = L.marker(
+                [43.84005962, -111.7772793],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_134c407853b143c1ce6e81c4ed38a44a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0a0000c40c89870143c89c974ed9775 = $(`<div id="html_a0a0000c40c89870143c89c974ed9775" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Mandarin Restraunt<br><strong>Address:</strong> 222 E 7th N, Rexburg, ID 83440<br><strong>Category:</strong> Chinese</div>`)[0];
+                popup_134c407853b143c1ce6e81c4ed38a44a.setContent(html_a0a0000c40c89870143c89c974ed9775);
+            
+        
+
+        marker_8e06dcb9632f1e6771a9591d569f3e3e.bindPopup(popup_134c407853b143c1ce6e81c4ed38a44a)
+        ;
+
+        
+    
+    
+            var marker_ac9bbe4294e9d1ecbe987d7413e16dff = L.marker(
+                [43.84111737, -111.7785411],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_2dcad4e2a27f284fe72ccb0f5d529cb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de411a9c13b9f140f5d3aa3ffc4ae4b1 = $(`<div id="html_de411a9c13b9f140f5d3aa3ffc4ae4b1" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> El Rancho Taqueria<br><strong>Address:</strong> 727 N 2nd E, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_2dcad4e2a27f284fe72ccb0f5d529cb5.setContent(html_de411a9c13b9f140f5d3aa3ffc4ae4b1);
+            
+        
+
+        marker_ac9bbe4294e9d1ecbe987d7413e16dff.bindPopup(popup_2dcad4e2a27f284fe72ccb0f5d529cb5)
+        ;
+
+        
+    
+    
+            var marker_c3b4103ebcb3ed9544f246e348239114 = L.marker(
+                [43.85244334, -111.7754851],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_f3fbb6d62f9fb920b8037b5a23751ae6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0de627f15fd35b3bda0f10518d72ecca = $(`<div id="html_0de627f15fd35b3bda0f10518d72ecca" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Taqueria El Pollo Loco Jr<br><strong>Address:</strong> Taco truck, 275 Stationery Pl, Rexburg, ID 83440<br><strong>Category:</strong> Mexican</div>`)[0];
+                popup_f3fbb6d62f9fb920b8037b5a23751ae6.setContent(html_0de627f15fd35b3bda0f10518d72ecca);
+            
+        
+
+        marker_c3b4103ebcb3ed9544f246e348239114.bindPopup(popup_f3fbb6d62f9fb920b8037b5a23751ae6)
+        ;
+
+        
+    
+    
+            var marker_278a8d1eeb7f97b2d29968bde7eb3ef0 = L.marker(
+                [43.81849913, -111.7899485],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_cc84a00124ad835dd4eac1a0b4b0c8b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb83704e7c656c6f617dbf45f756e69e = $(`<div id="html_cb83704e7c656c6f617dbf45f756e69e" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> New Fong's<br><strong>Address:</strong> 352 S 2nd St W, Rexburg, ID 83440<br><strong>Category:</strong> Chinese</div>`)[0];
+                popup_cc84a00124ad835dd4eac1a0b4b0c8b8.setContent(html_cb83704e7c656c6f617dbf45f756e69e);
+            
+        
+
+        marker_278a8d1eeb7f97b2d29968bde7eb3ef0.bindPopup(popup_cc84a00124ad835dd4eac1a0b4b0c8b8)
+        ;
+
+        
+    
+    
+            var marker_25cfaeb8687fe9e1f8c32007e2f09901 = L.marker(
+                [43.82554889, -111.7839822],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_b363a4e07efbee19a8a2ad25f7740eee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6547d0a08a99c1f8364ebe8d83fcedd = $(`<div id="html_e6547d0a08a99c1f8364ebe8d83fcedd" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Paradis Donuts & Gelato<br><strong>Address:</strong> 16 S Center St, Rexburg, ID 83440<br><strong>Category:</strong> Desserts</div>`)[0];
+                popup_b363a4e07efbee19a8a2ad25f7740eee.setContent(html_e6547d0a08a99c1f8364ebe8d83fcedd);
+            
+        
+
+        marker_25cfaeb8687fe9e1f8c32007e2f09901.bindPopup(popup_b363a4e07efbee19a8a2ad25f7740eee)
+        ;
+
+        
+    
+    
+            var marker_ec09a72d52c7383d79b6700648419a29 = L.marker(
+                [43.82492579, -111.7899276],
+                {}
+            ).addTo(map_c1f779efbbd3359e6f7c28e55dbdf6f6);
+        
+    
+        var popup_9be3f969c678d9482bf7a632764d3356 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64796e217175b5ce5cdd489ae710ed87 = $(`<div id="html_64796e217175b5ce5cdd489ae710ed87" style="width: 100.0%; height: 100.0%;"><strong>Name:</strong> Sodavine<br><strong>Address:</strong> 50 S 2nd St W, Rexburg, ID 83440<br><strong>Category:</strong> Beverage</div>`)[0];
+                popup_9be3f969c678d9482bf7a632764d3356.setContent(html_64796e217175b5ce5cdd489ae710ed87);
+            
+        
+
+        marker_ec09a72d52c7383d79b6700648419a29.bindPopup(popup_9be3f969c678d9482bf7a632764d3356)
+        ;
+
+        
+    
+</script>
+</html>

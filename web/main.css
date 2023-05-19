@@ -1,0 +1,28 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS for the header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS for the map container */
+#map-container {
+    border-radius: 10px;
+    width: 90vw;
+    height: 80vh;
+    margin: 20px auto;
+    background-color: rgb(200, 221, 228);
+}
