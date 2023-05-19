@@ -8,7 +8,7 @@ data = pd.read_csv('restraunts.csv')
 latitude = (data['latitude'].min() + data['latitude'].max()) / 2
 longitude = (data['longitude'].min() + data['longitude'].max()) / 2
 
-# Create a map centered on a specific location
+# Create a map
 map = folium.Map(location=[latitude, longitude], zoom_start=12)
 
 # Iterate over the rows of the DataFrame
