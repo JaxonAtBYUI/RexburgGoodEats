@@ -2,9 +2,7 @@
 
 The goal of this project was to learn how to take data and display it on a map for a user on a website for user to use. This map is a map of restraunts that are local to the Rexburg area. This allows the user to see potentially new places to try they couldn't otherwise find outside of rexburg.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Demo Video](https://youtu.be/ahWpU3ik7BQ)
 
 # Development Environment
 
